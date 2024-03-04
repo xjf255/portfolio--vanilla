@@ -1,7 +1,12 @@
-import './style.css'
+// import './style.css'
 
-const HTML = `
-  <h1>Hello Vite!</h1>
-`
+const $presentationText = document.querySelectorAll('.profile__text')
+console.log($presentationText)
 
-document.querySelector('#app').insertAdjacentHTML('afterbegin', HTML)
+
+const changeText = setTimeout(() =>{
+  $presentationText.forEach((txt) =>{
+    txt.classList.toggle('text--hide')
+  })
+},5000)
+

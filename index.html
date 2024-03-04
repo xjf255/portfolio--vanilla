@@ -6,18 +6,20 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dev | Xjf</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<main>
+
+<body>
   <header>
     <figure class="logo">
       XJF
     </figure>
     <nav>
       <ul>
-        <li class="li--active"><a href="about">About me</a></li>
-        <li><a href="projects">Projects</a></li>
-        <li><a href="stack">Stack</a></li>
-        <li><a href="contact">Contact</a></li>
+        <li class="li--active"><a href="#about">About me</a></li>
+        <li class="li--item"><a href="#projects">Projects</a></li>
+        <li class="li--item"><a href="#stack">Stack</a></li>
+        <li class="li--item"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <section class="config">
@@ -41,13 +43,59 @@
     </section>
   </header>
 
-  <section id="app">
+  <main>
+    <section id="profile">
+      <figure>
+        <!-- <img src="" alt="looking for a good photo..."> -->
+        <div class="img"></div>
+      </figure>
 
-  </section>
+      <div class="profile__txt">
+        <strong class="profile__text">Hey there 👋</strong>
+        <h1 class="profile__text text--hide">I am Xjf</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at soluta repellendus facere amet,
+          architecto itaque alias aliquid distinctio facilis quia, fugit pariatur veniam possimus blanditiis natus ea
+          provident magni.</p>
+        <span class="btn">
+          <button>
+            <img class="profile--icon" src="images/file-solid.svg" alt="Curriculum Vitae File">
+            Curriculum V.
+          </button>
+          <button>
+            <img class="profile--icon" src="images/github.svg" alt="Curriculum Vitae File">
+            Profile
+          </button>
+        </span>
+      </div>
+
+    </section>
+
+    <section id="about">
+      <article>
+        <span class="title">
+          <img class="icon" src="images/user-solid.svg" alt="user">
+          <h2 class="text">About me</h2>
+        </span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at soluta repellendus facere amet,
+          architecto itaque alias aliquid distinctio facilis quia, fugit pariatur veniam possimus blanditiis natus ea
+          provident magni.</p>
+      </article>
+    </section>
+
+    <section id="projects">
+      <article>
+        <span class="title">
+          <img class="icon" src="images/code-solid.svg" alt="user">
+          <h2 class="text">Projects</h2>
+        </span>
+      </article>
+    </section>
+  </main>
+
   <footer>
     FOOTER
   </footer>
-</main>
+</body>
 <script type="module" src="/main.js"></script>
 
 </html>
