@@ -2,24 +2,31 @@
     "projects":[
         {
             "id":0,
-            "title": "title1",
+            "title": "TO-DO",
             "description": "nose",
             "img": "none",
             "build": ["Javascript"]
         },
         {
-            "id":0,
-            "title": "title2",
+            "id":1,
+            "title": "Algo con node",
             "description": "nose",
             "img": "none",
-            "build": ["Javascript"]
+            "build": ["Node"]
         },
         {
-            "id":0,
-            "title": "title3",
+            "id":2,
+            "title": "Conecta 4",
             "description": "nose",
             "img": "none",
-            "build": ["Javascript"]
+            "build": ["React"]
+        },
+        {
+            "id":3,
+            "title": "Calculadora",
+            "description": "nose",
+            "img": "none",
+            "build": ["React"]
         }
     ]
 }
