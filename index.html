@@ -16,10 +16,10 @@
     </figure>
     <nav>
       <ul>
-        <li class="li--active"><a href="#about">About me</a></li>
-        <li class="li--item"><a href="#projects">Projects</a></li>
-        <li class="li--item"><a href="#stack">Stack</a></li>
-        <li class="li--item"><a href="#contact">Contact</a></li>
+        <li class="li--item"><a class="--active" href="#about">About me</a></li>
+        <li class="li--item"><a class="--default" href="#projects">Projects</a></li>
+        <li class="li--item"><a class="--default" href="#stack">Stack</a></li>
+        <li class="li--item"><a class="--default" href="#contact">Contact</a></li>
       </ul>
     </nav>
     <section class="config">
@@ -46,25 +46,25 @@
   <main>
     <section id="profile">
       <figure>
-        <!-- <img src="" alt="looking for a good photo..."> -->
+        <img src="" alt="looking for a good photo...">
         <div class="img"></div>
       </figure>
 
-      <div class="profile__txt">
+      <div class="profile__txt">  
         <strong class="profile__text">Hey there 👋</strong>
         <h1 class="profile__text text--hide">I am Xjf</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at soluta repellendus facere amet,
           architecto itaque alias aliquid distinctio facilis quia, fugit pariatur veniam possimus blanditiis natus ea
           provident magni.</p>
         <span class="btn">
-          <button>
+          <a>
             <img class="profile--icon" src="images/file-solid.svg" alt="Curriculum Vitae File">
             Curriculum V.
-          </button>
-          <button>
+          </a>
+          <a>
             <img class="profile--icon" src="images/github.svg" alt="Curriculum Vitae File">
             Profile
-          </button>
+          </a>
         </span>
       </div>
 
@@ -89,12 +89,38 @@
           <h2 class="text">Projects</h2>
         </span>
       </article>
+
+      <ul id="section__projects">
+        
+      </ul>
     </section>
   </main>
 
   <footer>
     FOOTER
   </footer>
+
+  <template id="shape--projects">
+    <li>
+      <figure>
+        <img src="" alt="project design">
+      </figure>
+      <div class="project--info">
+        <h1 class="project__title">Project</h1>
+        <p>nose</p>
+        <span class="btn">
+          <a>
+            <img class="profile--icon" src="images/link-solid.svg" alt="previsualizacion del projecto">
+            Review
+          </a>
+          <a>
+            <img class="profile--icon" src="images/github.svg" alt="ver codigo del proyecto">
+            Code
+          </a>
+        </span>
+      </div>
+    </li>
+  </template>
 </body>
 <script type="module" src="/main.js"></script>
 
