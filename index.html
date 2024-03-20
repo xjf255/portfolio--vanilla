@@ -16,10 +16,11 @@
     </figure>
     <nav>
       <ul>
-        <li class="li--item"><a class="--active" href="#about">About me</a></li>
+        <li class="li--item"><a class="--default" href="#profile">Home</a></li>
         <li class="li--item"><a class="--default" href="#projects">Projects</a></li>
-        <li class="li--item"><a class="--default" href="#stack">Stack</a></li>
-        <li class="li--item"><a class="--default" href="#contact">Contact</a></li>
+        <li class="li--item"><a class="--default" href="#about">About me</a></li>
+        <li class="li--item"><a class="--default" href="#tech">Technologys</a></li>
+        <li class="li--item"><a class="--default" id="contact">Contact</a></li>
       </ul>
     </nav>
     <section class="config">
@@ -27,7 +28,7 @@
         es
       </div>
       <div class="themes">
-        <p class="main--theme">Light</p>
+        <p class="main--theme" id="change--themes">Dark</p>
         <div class="main--color">
           <label class="color--one">
             <input type="hidden" checked>
@@ -50,7 +51,7 @@
         <div class="img"></div>
       </figure>
 
-      <div class="profile__txt">  
+      <div class="profile__txt">
         <strong class="profile__text">Hey there 👋</strong>
         <h1 class="profile__text text--hide">I am Xjf</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at soluta repellendus facere amet,
@@ -70,18 +71,6 @@
 
     </section>
 
-    <section id="about">
-      <article>
-        <span class="title">
-          <img class="icon" src="images/user-solid.svg" alt="user">
-          <h2 class="text">About me</h2>
-        </span>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at soluta repellendus facere amet,
-          architecto itaque alias aliquid distinctio facilis quia, fugit pariatur veniam possimus blanditiis natus ea
-          provident magni.</p>
-      </article>
-    </section>
-
     <section id="projects">
       <article>
         <span class="title">
@@ -91,14 +80,38 @@
       </article>
 
       <ul id="section__projects">
-        
+
       </ul>
     </section>
-  </main>
 
-  <footer>
-    FOOTER
-  </footer>
+    <section id="about">
+      <article>
+        <span class="title">
+          <img class="icon" src="images/user-solid.svg" alt="user">
+          <h2 class="text">About me</h2>
+        </span>
+        <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at soluta repellendus facere amet,
+          architecto itaque alias aliquid distinctio facilis quia, fugit pariatur veniam possimus blanditiis natus ea
+          provident magni.</p>
+      </article>
+    </section>
+
+    <section id="tech">
+      <article>
+        <span class="title">
+          <img class="icon" src="images/brain-solid.svg" alt="user">
+          <h2 class="text">Technologys</h2>
+        </span>
+        <!-- <div>
+          <h3>Area</h3>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>  -->
+    </section>
+  </main>
 
   <template id="shape--projects">
     <li>
@@ -120,6 +133,10 @@
         </span>
       </div>
     </li>
+  </template>
+
+  <template id="shape--tech">
+
   </template>
 </body>
 <script type="module" src="/main.js"></script>

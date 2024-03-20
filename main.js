@@ -1,28 +1,26 @@
 // import './style.css'
+import ScrollSpy from "./spy"
+import textAnimation from "./animationText"
+import { LIST_THEMES } from "./const"
 
-const navItem = document.querySelectorAll('.li--item>a')
-const $presentationText = document.querySelectorAll('.profile__text')
 const $template = document.getElementById('shape--projects').content
 const $sectionProjects = document.getElementById('section__projects')
 const $fragment = document.createDocumentFragment()
+const $contac = document.getElementById('contact')
+const $themes = document.getElementById('change--themes')
+
+
 
 document.addEventListener('click', e => {
-  navItem.forEach(item => {
-    const itemSelect = document.querySelector('.--active')
-    if (item === e.target && item !== itemSelect) {
-      itemSelect.classList.remove('--active')
-      itemSelect.classList.add('--default')
-      item.classList.add('--active')
-      item.classList.remove('--default')
-    }
-  })
-})
+  if (e.target === $contac) console.log(1)
 
-const changeText = setTimeout(() => {
-  $presentationText.forEach((txt) => {
-    txt.classList.toggle('text--hide')
-  })
-}, 5000)
+  if (e.target === $themes) {
+    const position = LIST_THEMES.indexOf($themes.textContent) + 1
+    console.log(LIST_THEMES[position] ?? LIST_THEMES[0])
+    $themes.textContent = LIST_THEMES[position] ?? LIST_THEMES[0]
+  }
+
+})
 
 fetch('projects.json')
   .then(json => json.json())
@@ -35,3 +33,5 @@ fetch('projects.json')
     $sectionProjects.appendChild($fragment)
   })
 
+  textAnimation('.profile__text')
+  ScrollSpy()

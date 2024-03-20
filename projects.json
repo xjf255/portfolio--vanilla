@@ -20,13 +20,6 @@
             "description": "nose",
             "img": "none",
             "build": ["React"]
-        },
-        {
-            "id":3,
-            "title": "Calculadora",
-            "description": "nose",
-            "img": "none",
-            "build": ["React"]
         }
     ]
 }

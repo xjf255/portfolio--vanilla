@@ -3,8 +3,8 @@
   line-height: 1.5;
   font-weight: 400;
 
-  --dark-gray: #33332d;
-  --sweet-color: rgb(53, 240, 246);
+  --btn-second-color: #33332d;
+  --important-color: rgb(12, 153, 158);
 }
 
 * {
@@ -15,7 +15,6 @@
 }
 
 body {
-  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -85,7 +84,7 @@ ul {
       border: 1px solid var(--text-color);
 
       &.--default {
-        color: var(--sweet-color);
+        color: var(--important-color);
       }
 
       &.--active {
@@ -101,10 +100,12 @@ ul {
       animation-range: 0 60px;
     }
 
-    &.li--item>.--default:hover {
-      background-color: #dbe0e9;
-      border: 1px solid rgb(91, 136, 187);
-      transition: background-color 1s ease;
+    &.li--item:hover{
+      & >.--default:hover {
+        background-color: #BFD1EE;
+        border: 1px solid rgb(91, 136, 187);
+        transition: background-color 1s ease;
+      }
     }
   }
 }
@@ -144,7 +145,7 @@ ul {
 }
 
 .main--color {
-  width: 75px;
+  width: 76px;
   height: 30px;
   border: 1px solid black;
   display: flex;
@@ -180,10 +181,6 @@ main {
   flex-direction: column;
   align-items: center;
 
-  >* {
-    margin-top: 50px;
-  }
-
   .btn {
     display: flex;
     gap: 20px;
@@ -217,6 +214,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* margin-top: 120px; */
 
     >figure {
 
@@ -271,18 +269,28 @@ main {
         font-size: 34px;
       }
     }
+    & article > .about__text{
+      padding: 0 200px;
+    }
 
     & #section__projects {
       flex-direction: column;
+      align-items: center;
       gap: 50px;
 
       & li {
         height: 300px;
-        width: 100%;
+        width: 80%;
+        max-width: 100%;
         display: flex;
         align-items: flex-end;
         justify-content: center;
         gap: 30px;
+        padding: 20px;
+
+        &:nth-child(2) {
+          flex-direction: row-reverse;
+        }
 
         & figure {
           width: 50%;
@@ -297,7 +305,7 @@ main {
         }
 
         & .btn>a:first-child {
-          background-color: var(--dark-gray);
+          background-color: var(--btn-second-color);
           border: none;
           color: #f9f9f9;
         }
@@ -313,7 +321,7 @@ main {
   }
 
   to {
-    color: var(--sweet-color);
+    color: var(--important-color);
     display: block;
     opacity: 1;
   }
@@ -322,7 +330,8 @@ main {
 @keyframes header--animation {
   to {
     --text-color: black;
-    width: 800px;
+    --bg:rgba(247, 247, 247, 0.409);
+    width: 900px;
     border-radius: 20px;
     border: 1px solid black;
     justify-content: center;
