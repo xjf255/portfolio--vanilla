@@ -7,7 +7,7 @@ export default function ScrollSpy() {
             if (entry.isIntersecting && id !== null) {
                 document.querySelector(`a.--default[href="#${id}"]`).classList.add('--active');
             } else {
-                document.querySelector(`a.--default[href="#${id}"]`).classList.remove('--active');
+                document.querySelector(`a.--default[href="#${id}"]`)?.classList.remove('--active');
             }
         });
     }

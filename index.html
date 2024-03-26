@@ -28,17 +28,11 @@
         es
       </div>
       <div class="themes">
-        <p class="main--theme" id="change--themes">Dark</p>
+        <p class="main--theme" id="change--themes">Light</p>
         <div class="main--color">
-          <label class="color--one">
-            <input type="hidden" checked>
-          </label>
-          <label class="color--two">
-            <input type="hidden">
-          </label>
-          <label class="color--three">
-            <input type="hidden">
-          </label>
+          <span class="selected" data-color="default"></span>
+          <span class="other--colors" data-color="first"></span>
+          <span class="other--colors" data-color="second"></span>
         </div>
       </div>
     </section>
@@ -54,16 +48,21 @@
       <div class="profile__txt">
         <strong class="profile__text">Hey there 👋</strong>
         <h1 class="profile__text text--hide">I am Xjf</h1>
+        <p class="rol">Front-end Developer</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at soluta repellendus facere amet,
           architecto itaque alias aliquid distinctio facilis quia, fugit pariatur veniam possimus blanditiis natus ea
           provident magni.</p>
         <span class="btn">
           <a>
-            <img class="profile--icon" src="images/file-solid.svg" alt="Curriculum Vitae File">
+            <figure class="container--icon">
+              <img class="profile--icon" src="./images/file-solid.svg" alt="Curriculum Vitae File">
+            </figure>
             Curriculum V.
           </a>
           <a>
-            <img class="profile--icon" src="images/github.svg" alt="Curriculum Vitae File">
+            <figure class="container--icon">
+              <img class="profile--icon" src="images/github.svg" alt="Curriculum Vitae File">
+            </figure>
             Profile
           </a>
         </span>
@@ -90,7 +89,8 @@
           <img class="icon" src="images/user-solid.svg" alt="user">
           <h2 class="text">About me</h2>
         </span>
-        <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at soluta repellendus facere amet,
+        <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at soluta repellendus
+          facere amet,
           architecto itaque alias aliquid distinctio facilis quia, fugit pariatur veniam possimus blanditiis natus ea
           provident magni.</p>
       </article>
@@ -115,7 +115,7 @@
 
   <template id="shape--projects">
     <li>
-      <figure>
+      <figure class="img--project">
         <img src="" alt="project design">
       </figure>
       <div class="project--info">
@@ -123,11 +123,15 @@
         <p>nose</p>
         <span class="btn">
           <a>
-            <img class="profile--icon" src="images/link-solid.svg" alt="previsualizacion del projecto">
+            <figure class="container--icon">
+              <img class="profile--icon" src="images/link-solid.svg" alt="previsualizacion del projecto">
+            </figure>
             Review
           </a>
           <a>
-            <img class="profile--icon" src="images/github.svg" alt="ver codigo del proyecto">
+            <figure class="container--icon">
+              <img class="profile--icon" src="images/github.svg" alt="ver codigo del proyecto">
+            </figure>
             Code
           </a>
         </span>
