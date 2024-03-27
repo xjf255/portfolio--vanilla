@@ -11,3 +11,5 @@ I am xjf and this is my incomplated portfolio...
     4. add function contact
     5. add stack
     6. add more themes :check
+    7. add localStorage :check
+    6. add i18n

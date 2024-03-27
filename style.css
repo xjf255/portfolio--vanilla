@@ -3,12 +3,13 @@
   line-height: 1.5;
   font-weight: 400;
 
-  --btn-second-color: #CA5502; /*esta variable cambia*/
-  --important-color: #377F86; /*esta variable cambia*/
+  /*esta variable cambia*/
+  --btn-second-color: #CA5502; 
+  --important-color: #377F86; 
   --bg: #f9f9f9;
+  --text-color: #000;
   --hover:#BFD1EE;
   /*Variables constantes*/
-  --black: #000;
   --gray:#D1CCCC;
 }
 
@@ -17,6 +18,8 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  color: var(--text-color);
+  transition: background-color 0.4s ease , color 0.4s ease;
 }
 
 body {
@@ -79,11 +82,11 @@ ul {
 
     >a {
       display: block;
-      color: var(--black);
+      color: var(--text-color);
       border-radius: 10px;
       padding: 4px;
       text-decoration: none;
-      border: 1px solid var(--black);
+      border: 1px solid var(--text-color);
 
       &.--active {
         background-color: var(--important-color);
@@ -137,8 +140,7 @@ ul {
 
   .themes>p {
     text-align: center;
-    background-color: #f9f9f9;
-    color: #000;
+    color: var(--text-color);
     padding: 2px;
   }
 }
@@ -194,7 +196,7 @@ main {
       .container--icon{
         width: 28px;
         height: 28px;
-        background: var(--bg);
+        background: #f9f9f9;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -337,7 +339,7 @@ main {
     --bg: rgba(247, 247, 247, 0.409);
     width: 900px;
     border-radius: 20px;
-    border: 1px solid black;
+    border: 1px solid var(--text-color);
     justify-content: center;
     padding: 0;
   }
