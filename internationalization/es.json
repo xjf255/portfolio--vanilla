@@ -1,0 +1,74 @@
+{
+  "header": {
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "about": "Sobre mí",
+    "contact": "Contacto"
+  },
+  "profile":{
+    "title": "Soy xjf",
+    "subtitle": "Desarrollador Full Stack",
+    "description": "Con más de 3 años de experiencia como desarrollador, he realizado interfaces de usuario intuitivas y funcionales, buscando siempre aprender nuevas tecnologías , perfeccionando mis conocimientos y adaptándome a los desafíos del desarrollo web.",
+    "imageAlt": "Fernando Diaz",
+    "btn_cv": "Descargar CV",
+    "btn_git": "Ver GitHub"
+  },
+  "experience":{
+    "title": "Experiencia",
+    "items": [
+      {
+        "company": "LCH Technologies",
+        "position": "Desarrollador RPA",
+        "duration": "Abril 2025 - Presente",
+        "description": "Desarrollador RPA especializado en la automatización de procesos empresariales utilizando UiPath y PowerAutomate, con un enfoque en la mejora de la eficiencia operativa y la reducción de costos."
+      }
+    ]
+  },
+  "projects":{
+    "title": "Proyectos",
+    "btn_view": "Ver proyecto",
+    "btn_git": "Ver código",
+    "items": [
+      {
+        "id": 0,
+        "title": "TO-DO",
+        "description": "nose",
+        "url": "",
+        "git_url": "",
+        "img_url": "none",
+        "build": [
+          "Javascript"
+        ]
+      },
+      {
+        "id": 1,
+        "title": "Algo con node",
+        "description": "nose",
+        "url": "",
+        "git_url": "",
+        "img_url": "none",
+        "build": [
+          "Node"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Conecta 4",
+        "description": "nose",
+        "url": "",
+        "git_url": "",
+        "img_url": "none",
+        "build": [
+          "React"
+        ]
+      }
+    ]
+  },
+  "about_me": {
+    "title": "Sobre mí",
+    "description": "Soy un desarrollador apasionado por la tecnología y la innovación. Me encanta enfrentar nuevos desafíos y aprender constantemente. Mi objetivo es crear soluciones que mejoren la vida de las personas a través de la tecnología."
+  },
+  "technologies": {
+    "title": "Tecnologías"
+  }
+}

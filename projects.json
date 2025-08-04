@@ -1,25 +1,31 @@
 {
-    "projects":[
+    "projects": [
         {
-            "id":0,
+            "id": 0,
             "title": "TO-DO",
             "description": "nose",
             "img": "none",
-            "build": ["Javascript"]
+            "build": [
+                "Javascript"
+            ]
         },
         {
-            "id":1,
+            "id": 1,
             "title": "Algo con node",
             "description": "nose",
             "img": "none",
-            "build": ["Node"]
+            "build": [
+                "Node"
+            ]
         },
         {
-            "id":2,
+            "id": 2,
             "title": "Conecta 4",
             "description": "nose",
             "img": "none",
-            "build": ["React"]
+            "build": [
+                "React"
+            ]
         }
     ]
 }
